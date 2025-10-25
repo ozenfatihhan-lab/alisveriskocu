@@ -1,1 +1,95 @@
-# alisveriskocu
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alisveriskocu.com | Canlı Ürün Demo Platformu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet"/>
+  <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"/>
+  <link rel="manifest" href="manifest.json"/>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family: 'Poppins', sans-serif; background:#f8f9fa; color:#2d2d2d; line-height:1.7; }
+    .container { max-width:1200px; margin:auto; padding:20px; }
+    header { text-align:center; padding:40px 0; background:white; box-shadow:0 2px 15px rgba(0,0,0,0.1); }
+    .hero { background: linear-gradient(135deg, #1A3C6B, #00D1C1); color:white; padding:90px 20px; text-align:center; border-radius:18px; margin:50px 0; }
+    .hero h1 { font-size:48px; margin-bottom:20px; }
+    .hero p { font-size:24px; margin:20px 0; opacity:0.9; }
+    .btn { background:#8CC63F; color:white; padding:16px 36px; text-decoration:none; border-radius:10px; font-weight:700; font-size:18px; display:inline-block; margin:10px; transition:0.3s; }
+    .btn:hover { transform:scale(1.05); }
+    .traction { display:flex; justify-content:center; gap:40px; flex-wrap:wrap; margin:60px 0; text-align:center; }
+    .traction div { background:white; padding:30px; border-radius:15px; box-shadow:0 4px 15px rgba(0,0,0,0.1); min-width:180px; }
+    .traction h3 { color:#1A3C6B; font-size:38px; margin:0; }
+    .contact { background:white; padding:50px; border-radius:18px; text-align:center; box-shadow:0 4px 15px rgba(0,0,0,0.1); margin-bottom:50px; }
+    footer { text-align:center; padding:25px; font-size:14px; color:#777; }
+    @media (max-width:768px) { .hero h1 { font-size:36px; } .hero p { font-size:20px; } }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- LOGO -->
+    <header>
+      <svg width="320" height="100" viewBox="0 0 1000 300" xmlns="http://www.w3.org/2000/svg">
+        <g transform="translate(80, 150)">
+          <circle cx="100" cy="0" r="110" fill="none" stroke="#00D1C1" stroke-width="14"/>
+          <path d="M100 -60 L60 0 L75 20 Z" fill="#00D1C1"/>
+          <path d="M100 60 L60 0 L75 -20 Z" fill="#00D1C1"/>
+          <path d="M180 0 L130 -15 L130 15 Z" fill="#00D1C1"/>
+          <path d="M150 -30 H200 V30 H120 V-30 H140 M140 -30 L165 -55 L190 -30" stroke="#00D1C1" stroke-width="14" stroke-linecap="round"/>
+        </g>
+        <text x="300" y="135" font-family="Poppins, sans-serif" font-weight="700" font-size="130" fill="#1A3C6B" letter-spacing="-1.5">Alisveriskocu</text>
+        <text x="300" y="180" font-family="Poppins, sans-serif" font-weight="500" font-size="65" fill="#8CC63F">.com</text>
+      </svg>
+    </header>
+
+    <!-- HERO -->
+    <div class="hero">
+      <h1>Türkiye’nin İlk Canlı Ürün Demo Platformu</h1>
+      <p>Stüdyodan canlı demo, anında satış. 800.000 TL+ işlem hacmi.</p>
+      <a href="#demo" class="btn">Canlı Demo Başlat</a>
+      <a href="mailto:fatihhan@alisveriskocu.com" class="btn">Yatırımcılarla Görüş</a>
+    </div>
+
+    <!-- TRACTION -->
+    <div class="traction">
+      <div><h3>3</h3><p>Müşteri</p></div>
+      <div><h3>800K</h3><p>TL İşlem</p></div>
+      <div><h3>16.07.2025</h3><p>Kuruluş</p></div>
+    </div>
+
+    <!-- DEMO -->
+    <div id="demo" class="contact">
+      <h2>Canlı Demo Odası</h2>
+      <p>Marka showroom’larında kurulu. Kamera açılıyor...</p>
+      <button onclick="startDemo()" class="btn" style="margin-top:20px;">Kamera Aç</button>
+    </div>
+
+    <!-- İLETİŞİM -->
+    <div class="contact">
+      <h2>İletişim</h2>
+      <p>fatihhan@alisveriskocu.com | +90 542 625 09 91</p>
+      <p>Alisveriskocu Dijital Hizmetler | İstanbul</p>
+    </div>
+
+    <footer>© 2025 Alisveriskocu.com – Tüm hakları saklıdır.</footer>
+  </div>
+
+  <script>
+    function startDemo() {
+      alert("Kamera sistemi geliştirme aşamasında. İlk demo: Karcher – 14 Nisan 2025");
+    }
+  </script>
+</body>
+</html>
+{
+  "name": "Alisveriskocu",
+  "short_name": "Alisveriskocu",
+  "icons": [
+    { "src": "android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "android-chrome-512x512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "theme_color": "#00D1C1",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}
